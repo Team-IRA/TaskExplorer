@@ -5,7 +5,7 @@ on:push
   platform:Any CPU
   
 before_build:
-      - nuget restore TaskExplorer+Libs.sln
+      - nuget restore TaskExplorer.sln
 build:
-     project: TaskExplorer+Libs.sln
+     project: TaskExplorer.sln
      parallel: true
