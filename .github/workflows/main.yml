@@ -1,0 +1,11 @@
+name: GitHub CI
+on:push 
+
+  configuration:Release
+  platform:Any CPU
+  
+before_build:
+      - nuget restore TaskExplorer+Libs.sln
+build:
+     project: TaskExplorer+Libs.sln
+     parallel: true
