@@ -3,7 +3,8 @@ on:push
 
   configuration:Release
   platform:Any CPU
-  
+install:
+- git submodule update --init --recursive 
 before_build:
       - nuget restore TaskExplorer.sln
 build:
